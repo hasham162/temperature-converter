@@ -1,0 +1,17 @@
+const converter = require(&#39;./converter&#39;);
+
+test(&#39;Celsius to Fahrenheit&#39;, () =&gt; {
+expect(converter.celsiusToFahrenheit(0)).toBe(32);
+});
+
+test(&#39;Fahrenheit to Celsius&#39;, () =&gt; {
+expect(converter.fahrenheitToCelsius(32)).toBe(0);
+});
+
+test(&#39;Celsius to Kelvin&#39;, () =&gt; {
+expect(converter.celsiusToKelvin(0)).toBeCloseTo(273.15);
+});
+
+test(&#39;Kelvin to Celsius&#39;, () =&gt; {
+expect(converter.kelvinToCelsius(273.15)).toBeCloseTo(0);
+});
