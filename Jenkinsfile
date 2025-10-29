@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        nodejs 'NodeJS'
-    }
-
     parameters {
         string(name: 'BRANCH_NAME', defaultValue: 'main', description: 'Branch to build from')
         string(name: 'STUDENT_NAME', defaultValue: 'your name', description: 'Provide your name here, no name, no marks')
